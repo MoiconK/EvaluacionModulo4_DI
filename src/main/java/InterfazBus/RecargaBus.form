@@ -21,7 +21,9 @@
             <constraints/>
             <properties>
               <font name="Arial" size="22" style="1"/>
-              <text value="Recarga de tarjeta de bus"/>
+              <foreground color="-394241"/>
+              <icon value="logo.png"/>
+              <text value="Recarga de abonos de transporte"/>
             </properties>
           </component>
         </children>
