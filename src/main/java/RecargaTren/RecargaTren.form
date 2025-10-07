@@ -77,8 +77,8 @@
           </component>
           <grid id="8a6e6" binding="botones" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints>
-              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
+              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.0"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -87,6 +87,7 @@
                 <constraints/>
                 <properties>
                   <background color="-12257270"/>
+                  <font name="Cambria Math" size="12" style="1"/>
                   <preferredSize width="130" height="20"/>
                   <text value="Recargar tarjeta"/>
                 </properties>
@@ -95,12 +96,79 @@
                 <constraints/>
                 <properties>
                   <background color="-55268"/>
+                  <font name="Cambria Math" size="12" style="1"/>
                   <preferredSize width="80" height="20"/>
                   <text value="Limpiar"/>
                 </properties>
               </component>
+              <component id="2334e" class="javax.swing.JButton" binding="b_idioma">
+                <constraints/>
+                <properties>
+                  <background color="-7237231"/>
+                  <font name="Cambria Math" size="12" style="1"/>
+                  <preferredSize width="80" height="20"/>
+                  <text value="Idioma"/>
+                </properties>
+              </component>
             </children>
           </grid>
+          <grid id="a3ea4" binding="contador" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag top="2" left="2" bottom="2" right="2" weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-7237231"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f3802" class="javax.swing.JLabel" binding="l_contador">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <background color="-7237231"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Precio total"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="59b17" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag top="2" left="2" bottom="2" right="2" weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <component id="74c9" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <font name="Constantia" size="12"/>
+              <text value="Añadir saldo"/>
+            </properties>
+          </component>
+          <component id="422db" class="javax.swing.JComboBox" binding="saldosdisponibles">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+              <gridbag top="2" left="2" bottom="2" right="2" weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="0,00€"/>
+                <item value="5,00€"/>
+                <item value="10,00€"/>
+                <item value="15,00€"/>
+                <item value="20,00€"/>
+                <item value="30,00€"/>
+              </model>
+              <preferredSize width="70" height="20"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>
