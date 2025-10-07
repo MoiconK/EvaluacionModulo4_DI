@@ -14,6 +14,10 @@ public class RecargaTren {
     private JPanel botones;
     private JButton b_recargartarjeta;
     private JButton b_limpiar;
+    private JPanel contador;
+    private JLabel l_contador;
+    private JComboBox saldosdisponibles;
+    private JButton b_idioma;
     public JPanel panel1;
 
     public static void main(String[] args) {
