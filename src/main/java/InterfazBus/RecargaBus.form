@@ -20,7 +20,7 @@
           <component id="696c1" class="javax.swing.JLabel" binding="l_recargaBus">
             <constraints/>
             <properties>
-              <font name="Arial" size="22" style="1"/>
+              <font name="Arial" size="22" style="3"/>
               <foreground color="-394241"/>
               <icon value="logo.png"/>
               <text value="Recarga de abonos de transporte"/>
@@ -41,7 +41,8 @@
               <gridbag top="2" left="2" bottom="2" right="2" weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <font size="16"/>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-394241"/>
               <text value="DNI:"/>
             </properties>
           </component>
@@ -64,7 +65,8 @@
               <gridbag top="2" left="2" bottom="2" right="2" weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <font size="16"/>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-394241"/>
               <text value="Nº Tarjeta:"/>
             </properties>
           </component>
@@ -86,7 +88,8 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <font size="16"/>
+              <font name="Arial" size="16" style="1"/>
+              <foreground color="-394241"/>
               <text value="Seleccione el mes para recargar su abono:"/>
             </properties>
           </component>
@@ -112,10 +115,10 @@
         <children>
           <component id="7e827" class="javax.swing.JLabel" binding="l_precio">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <font name="Arial" size="20" style="1"/>
+              <font name="Dialog" size="20" style="1"/>
               <text value="Precio final: 10,00€"/>
             </properties>
           </component>
