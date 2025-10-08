@@ -1,6 +1,11 @@
 package RecargaTren;
 
+import com.toedter.calendar.JMonthChooser;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 public class RecargaTren {
     private JPanel ventanaPrincipal;
@@ -18,7 +23,61 @@ public class RecargaTren {
     private JLabel l_contador;
     private JComboBox saldosdisponibles;
     private JButton b_idioma;
+    private JMonthChooser jmc_calendario;
+    private JPanel footer;
     public JPanel panel1;
+
+    public RecargaTren() {
+        b_limpiar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tf_dni.setText("");
+                tf_ntarjeta.setText("");
+                saldosdisponibles.setSelectedIndex(0);
+                jmc_calendario.setMonth(0);
+            }
+        });
+        b_idioma.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        b_recargartarjeta.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (dniValido(tf_dni.getText()) && tarjetaValida(tf_ntarjeta.getText())) {
+                    JOptionPane.showConfirmDialog(ventanaPrincipal, "Recarga para el mes de:"+obtenerMes(jmc_calendario));
+                } else {
+                    JOptionPane.showMessageDialog(ventanaPrincipal, "DNI o número de tarjeta inválido", "Campos erróneos", JOptionPane.ERROR_MESSAGE);
+                }
+
+            }
+        });
+    }
+
+    public String obtenerMes(JMonthChooser monthChooser){
+        String mes = null;
+        String meses[] = {"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"};
+        for (int i = 0;i<meses.length;i++){
+            if (i == monthChooser.getMonth()){
+                mes = meses[i];
+            }
+        }
+        return mes;
+    }
+
+    public boolean dniValido(String dni){
+        if (dni.matches("^\\d{8}[A-HJ-NP-TV-Z]$")){
+            return true;
+        } else return false;
+    }
+
+    public boolean tarjetaValida(String tarjeta){
+        if (tarjeta.matches("^.{8}$")){
+            return true;
+        } else return false;
+    }
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("RecargaTren");
@@ -28,7 +87,6 @@ public class RecargaTren {
         frame.setVisible(true);
         frame.setSize(500, 400);
         frame.setLocationRelativeTo(null);
-
-
     }
 }
+
