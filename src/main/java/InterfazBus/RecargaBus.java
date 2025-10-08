@@ -61,13 +61,13 @@ public class RecargaBus extends JFrame implements WindowListener {
         setSize(800,600);
         setVisible(true);
 
-        recargarAbonoButton.addActionListener(new ActionListener() { //Muestra la ventana de confirmación
+        recargarAbonoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (dniValido(text_dni.getText()) && tarjetaValida(text_numero.getText())) {
-                    JOptionPane.showConfirmDialog(root, "Recarga para el mes de:"+obtenerMes(monthChooser_mes));
+                    JOptionPane.showConfirmDialog(root, "Recarga para el mes de:"+obtenerMes(monthChooser_mes)); //Ventana de confirmación
                 } else {
-                    JOptionPane.showMessageDialog(root, "El DNI o Nº de tarjeta no es válido", "Error con los campos", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(root, "El DNI o Nº de tarjeta no es válido", "Error con los campos", JOptionPane.ERROR_MESSAGE); //Ventana de error cuando un dato no está completo o es incorrecto
                 }
 
             }
