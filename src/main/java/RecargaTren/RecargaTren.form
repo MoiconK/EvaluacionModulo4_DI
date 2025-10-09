@@ -19,9 +19,10 @@
           <component id="6beb1" class="javax.swing.JLabel" binding="l_titulo">
             <constraints/>
             <properties>
-              <font name="Arial Black" size="18" style="1"/>
+              <font name="Yu Gothic UI Semibold" size="18" style="1"/>
               <horizontalAlignment value="0"/>
-              <text value="TRENOVA"/>
+              <icon value="logoTrenova2.png"/>
+              <text value="RECARGA DE TRANSPORTE TRENOVA"/>
             </properties>
           </component>
         </children>
@@ -42,7 +43,7 @@
             <properties>
               <font name="Constantia" size="12"/>
               <preferredSize width="53" height="16"/>
-              <text value="Nº Tarjeta"/>
+              <text value="💳 Nº Tarjeta"/>
             </properties>
           </component>
           <component id="e5446" class="javax.swing.JLabel" binding="L_DNI">
@@ -52,7 +53,7 @@
             </constraints>
             <properties>
               <font name="Constantia" size="12"/>
-              <text value="DNI"/>
+              <text value="🪪 DNI"/>
             </properties>
           </component>
           <component id="12d0d" class="javax.swing.JTextField" binding="tf_dni">
@@ -95,7 +96,7 @@
             </constraints>
             <properties>
               <font name="Constantia" size="12"/>
-              <text value="Añadir saldo"/>
+              <text value="➕ Añadir saldo"/>
             </properties>
           </component>
           <component id="422db" class="javax.swing.JComboBox" binding="saldosdisponibles">
@@ -133,7 +134,7 @@
             <properties>
               <font name="Constantia" size="12"/>
               <preferredSize width="126" height="16"/>
-              <text value="Mes de recarga abono"/>
+              <text value="📅 Mes de recarga abono"/>
             </properties>
           </component>
         </children>
@@ -161,7 +162,7 @@
                   <background color="-12257270"/>
                   <font name="Cambria Math" size="12" style="1"/>
                   <preferredSize width="130" height="25"/>
-                  <text value="Recargar tarjeta"/>
+                  <text value="💳 Recargar tarjeta"/>
                 </properties>
               </component>
               <component id="5bbc2" class="javax.swing.JButton" binding="b_limpiar">
@@ -171,7 +172,7 @@
                   <font name="Cambria Math" size="12" style="1"/>
                   <horizontalTextPosition value="0"/>
                   <preferredSize width="80" height="25"/>
-                  <text value="Limpiar"/>
+                  <text value="🧹 Limpiar"/>
                 </properties>
               </component>
               <component id="2334e" class="javax.swing.JButton" binding="b_idioma">
@@ -181,7 +182,7 @@
                   <font name="Cambria Math" size="12" style="1"/>
                   <horizontalTextPosition value="0"/>
                   <preferredSize width="80" height="25"/>
-                  <text value="Idioma"/>
+                  <text value="🌐 Idioma"/>
                 </properties>
               </component>
             </children>
@@ -195,7 +196,7 @@
               <font name="Constantia" size="14"/>
               <horizontalAlignment value="0"/>
               <horizontalTextPosition value="0"/>
-              <text value="PRECIO TOTAL"/>
+              <text value="PRECIO TOTAL: 0,.00€"/>
             </properties>
           </component>
         </children>
